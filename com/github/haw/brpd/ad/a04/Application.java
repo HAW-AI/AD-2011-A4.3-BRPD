@@ -1,13 +1,19 @@
 package com.github.haw.brpd.ad.a04;
 
+import static com.github.haw.brpd.ad.a04.Programm.*;
+
 public class Application {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		String[] input = new String[] {"W+W+WCPC","W--CP+++C"};
+		
+		for (String e : input) {
+			exec(programm(e));
+			System.out.println("---------------------------------------------");
+		}
 	}
 
 }
